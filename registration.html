@@ -1,0 +1,88 @@
+<!-- registration.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Registration - VolunteerHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">VolunteerHub</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#opportunities">Opportunities</a>
+            <a href="#about">About</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="registration-page">
+        <div class="registration-container">
+            <h2>Volunteer Registration</h2>
+            <div class="opportunity-summary">
+                <!-- Opportunity details will be populated by JS -->
+            </div>
+            
+            <form id="volunteerRegistrationForm" class="registration-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea id="address" name="address" rows="3"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="experience">Relevant Experience</label>
+                    <textarea id="experience" name="experience" rows="4"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>Availability *</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="availability" value="weekdays"> Weekdays</label>
+                        <label><input type="checkbox" name="availability" value="weekends"> Weekends</label>
+                        <label><input type="checkbox" name="availability" value="evenings"> Evenings</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="startDate">Preferred Start Date *</label>
+                    <input type="date" id="startDate" name="startDate" required>
+                </div>
+                
+                <button type="submit" class="submit-registration">Submit Registration</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <!-- Footer content remains the same -->
+        </div>
+        <div class="footer-bottom">
+            © 2024 VolunteerHub. All rights reserved.
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

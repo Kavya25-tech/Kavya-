@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Connection Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-hands-helping"></i>
+            <span>VolunteerHub</span>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#opportunities">Opportunities</a>
+            <a href="#about">About</a>
+            <button class="login-btn">Login</button>
+            <button class="register-btn">Register</button>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Make a Difference in Your Community</h1>
+        <p>Connect with meaningful volunteer opportunities near you</p>
+        <div class="search-container">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search for opportunities...">
+                <button class="search-btn">Search</button>
+            </div>
+            <div class="filters">
+                <select id="location">
+                    <option value="">Location</option>
+                    <option value="downtown">Downtown</option>
+                    <option value="suburbs">Suburbs</option>
+                    <option value="rural">Rural Areas</option>
+                </select>
+                <select id="category">
+                    <option value="">Category</option>
+                    <option value="education">Education</option>
+                    <option value="environment">Environment</option>
+                    <option value="health">Health</option>
+                    <option value="community">Community</option>
+                </select>
+                <input type="date" id="date" placeholder="Select Date">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="featured-opportunities">
+            <h2>Featured Opportunities</h2>
+            <div class="opportunities-grid" id="opportunitiesGrid">
+                <!-- Opportunities will be dynamically added here -->
+            </div>
+        </section>
+
+        <section class="upcoming-events">
+            <h2>Your Upcoming Events</h2>
+            <div class="events-container" id="upcomingEvents">
+                <!-- Registered events will appear here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Registration -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Create Account</h2>
+            <form id="registerForm">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal for Event Registration -->
+    <div class="modal" id="eventModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Event Registration</h2>
+            <div class="event-details">
+                <!-- Event details will be populated here -->
+            </div>
+            <form id="eventRegisterForm">
+                <button type="submit">Confirm Registration</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About VolunteerHub</h3>
+                <p>Connecting volunteers with meaningful opportunities since 2024.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 VolunteerHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
